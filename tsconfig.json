@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ciag/component-factory": [
+        "dist/ciag/component-factory/ciag-component-factory",
+        "dist/ciag/component-factory"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

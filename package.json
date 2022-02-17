@@ -1,12 +1,28 @@
 {
-  "name": "component-factory",
-  "version": "0.0.0",
+  "name": "@ciag/component-factory",
+  "version": "0.0.1",
+  "author": {
+    "name": "Carlos Eduardo Benedetti",
+    "email": "carlosbenedettidev@gmail.com"
+  },
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenCIAg/component-factory"
+  },
+  "keywords": [
+    "Angular"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "postbuild": "npm run docs",
+    "deploy": "npm publish --access public dist/@ciag/component-factory",
+    "docs": "rimraf docs && rimraf globals.md && typedoc --options ./typedoc.ts && rimraf docs/README.md && concat-md --toc --decrease-title-levels --dir-name-as-title docs > globals.md && cp globals.md dist/$npm_package_name/",
+    "aaa":"echo dist/$npm_package_name/"
   },
   "private": true,
   "dependencies": {
@@ -23,16 +39,21 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.16",
     "@angular/cli": "~12.2.4",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "concat-md": "^0.3.5",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^12.1.1",
+    "typedoc": "^0.15.6",
+    "typedoc-plugin-markdown": "^2.2.16",
     "typescript": "~4.3.5"
   }
 }

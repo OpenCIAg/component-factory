@@ -1,0 +1,25 @@
+{
+  "name": "@ciag/component-factory",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A simplyfied way to generate dynamic angular components, that can also be used as plain DOM.",
+  "author": {
+    "name": "Carlos Eduardo Benedetti",
+    "email": "carlosbenedettidev@gmail.com"
+  },
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenCIAg/component-factory"
+  },
+  "keywords": [
+    "Angular"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
