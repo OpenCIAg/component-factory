@@ -63,7 +63,7 @@
 
 \+ **new ComponentFactoryService**(`factoryResolver`: ComponentFactoryResolver, `injector`: Injector, `appRef`: ApplicationRef): *[ComponentFactoryService](#classescomponentfactoryservicemd)*
 
-Defined in component-factory.service.ts:14
+*Defined in [component-factory.service.ts:14](https://github.com/OpenCIAg/component-factory/blob/7c08006/projects/ciag/component-factory/src/lib/component-factory.service.ts#L14)*
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ Name | Type |
 
 • **constRef**? : *ComponentRef‹unknown›*
 
-Defined in component-factory.service.ts:14
+*Defined in [component-factory.service.ts:14](https://github.com/OpenCIAg/component-factory/blob/7c08006/projects/ciag/component-factory/src/lib/component-factory.service.ts#L14)*
 
 ### Methods
 
@@ -89,7 +89,7 @@ Defined in component-factory.service.ts:14
 
 ▸ **create**<**T**>(`component`: Type‹T›, `instance?`: Partial‹T›, `options`: object): *ComponentRef‹T›*
 
-Defined in component-factory.service.ts:46
+*Defined in [component-factory.service.ts:46](https://github.com/OpenCIAg/component-factory/blob/7c08006/projects/ciag/component-factory/src/lib/component-factory.service.ts#L46)*
 
 **Type parameters:**
 
@@ -116,7 +116,7 @@ ___
 
 ▸ **createCustomInjector**(`providers`: StaticProvider[], `parentInjector`: Injector‹›): *Injector‹›*
 
-Defined in component-factory.service.ts:42
+*Defined in [component-factory.service.ts:42](https://github.com/OpenCIAg/component-factory/blob/7c08006/projects/ciag/component-factory/src/lib/component-factory.service.ts#L42)*
 
 **Parameters:**
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **createFactory**<**T**>(`component`: Type‹T›): *ComponentFactory‹T›*
 
-Defined in component-factory.service.ts:24
+*Defined in [component-factory.service.ts:24](https://github.com/OpenCIAg/component-factory/blob/7c08006/projects/ciag/component-factory/src/lib/component-factory.service.ts#L24)*
 
 **Type parameters:**
 

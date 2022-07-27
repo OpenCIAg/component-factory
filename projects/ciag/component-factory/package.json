@@ -1,6 +1,6 @@
 {
   "name": "@ciag/component-factory",
-  "version": "0.0.1",
+  "version": "13.3.0",
   "private": false,
   "description": "A simplyfied way to generate dynamic angular components, that can also be used as plain DOM.",
   "author": {
@@ -16,8 +16,8 @@
     "Angular"
   ],
   "peerDependencies": {
-    "@angular/common": "^12.2.0",
-    "@angular/core": "^12.2.0"
+    "@angular/common": "~13.3.11",
+    "@angular/core": "~13.3.11"
   },
   "dependencies": {
     "tslib": "^2.3.0"
