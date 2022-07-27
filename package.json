@@ -22,7 +22,7 @@
     "postbuild": "npm run docs",
     "deploy": "npm publish --access public dist/@ciag/component-factory",
     "docs": "rimraf docs && rimraf globals.md && typedoc --options ./typedoc.ts && rimraf docs/README.md && concat-md --toc --decrease-title-levels --dir-name-as-title docs > globals.md && cp globals.md dist/$npm_package_name/",
-    "aaa":"echo dist/$npm_package_name/"
+    "aaa": "echo dist/$npm_package_name/"
   },
   "private": true,
   "dependencies": {
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.16",
-    "@angular/cli": "~12.2.4",
+    "@angular/cli": "^13.3.9",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
